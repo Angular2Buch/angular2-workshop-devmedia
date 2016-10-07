@@ -1,5 +1,5 @@
-<div class="well">
-	<div class="thumbnail pull-right">
+<div class="well clearfix">
+	<div class="thumbnail pull-left">
 		<img src="{{ book.cover }}" />
 	</div>
 
@@ -7,5 +7,5 @@
 	<p>{{ book.description }}</p>
 	<p><i>Autor: {{ book.author }}</i></p>
 
-  <a [routerLink]="['/dashboard']" class="btn btn-default">Dashboard</a>
+  <a [routerLink]="['/dashboard']" class="btn btn-default">zurück: Dashboard</a>
 </div>
