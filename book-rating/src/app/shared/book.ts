@@ -1,16 +1,18 @@
 export class Book {
 
   // this is my factory
-  static empty(): Book {
-    let isbn = Math.random().toString(36).substr(2, 9);
-    return new Book(isbn,  '', '', 0);
+  static empty() {
+    let isbn = Math.random().toString(36).substr(2,9);
+    return new Book(isbn, '', '', 0, '', '');
   }
 
   constructor(
     public isbn: string,
     public title: string,
     public description: string,
-    public rating = 0
+    public rating = 0,
+    public author = '',
+    public cover = ''
     ) {
   }
 
@@ -25,4 +27,5 @@ export class Book {
       this.rating--;
     }
   }
+
 }

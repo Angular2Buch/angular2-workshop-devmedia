@@ -1,12 +1,11 @@
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { BookDetailsComponent } from './book-details/book-details.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 const APP_ROUTES: Routes = [
-
-  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
+  { path: '', pathMatch: 'full', redirectTo: 'dashboard'},
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'book/:isbn', component: BookDetailsComponent }
+  { path: 'book/:isbn', component: BookDetailComponent }
   // { path: '*', component: NotFoundComponent }
 ];
 

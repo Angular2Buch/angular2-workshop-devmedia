@@ -17,6 +17,8 @@ export class CreateBookComponent {
   add() {
     this.bookCreated.emit(this.book);
     this.book = Book.empty();
+    // name of formfields are the same of the book property
     this.form.reset(Book.empty());
   }
+
 }

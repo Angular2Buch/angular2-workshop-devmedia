@@ -7,9 +7,8 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BookComponent } from './book/book.component';
 import { CreateBookComponent } from './create-book/create-book.component';
-
 import { BookStoreService } from './shared/book-store.service';
-import { BookDetailsComponent } from './book-details/book-details.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 import { AppRoutingModule } from './app.routing';
 
@@ -19,7 +18,7 @@ import { AppRoutingModule } from './app.routing';
     DashboardComponent,
     BookComponent,
     CreateBookComponent,
-    BookDetailsComponent
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -28,12 +27,7 @@ import { AppRoutingModule } from './app.routing';
     AppRoutingModule
   ],
   providers: [
-    BookStoreService,
-    {
-      provide: 'MY_BOOK_MONKEY_URL',
-      useValue: 'http://book-monkey2-api.angular2buch.de/books'
-    }
-
+    BookStoreService
   ],
   bootstrap: [AppComponent]
 })
